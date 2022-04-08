@@ -12,7 +12,7 @@ public class LogInRepo {
     private JdbcTemplate template;
 
     public boolean queryUserAndPass(final String username, final String password) {
-        final SqlRowSet result = template.queryForRowSet(Queries.SQL_SELECT_USER_BY_PASS, username, password);
+        final SqlRowSet result = template.queryForRowSet(Queries.SQL_SELECT_USER_BY_PASS, username, password);  
         return result.next();
     }
 }

@@ -12,6 +12,9 @@
     <div class="container">
         <div class="col mt-5">
             <h1 class="display-6">Welcome <span data-th-text="${username}"></span></h1>
+            <form method="GET" action="/authenticate/logout">
+                <button type="submit" class="btn btn-primary">Log Out</button>
+            </form>
         </div>
     </div>
 </body>
